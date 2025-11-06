@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="articles.html">Articles</a>
-                <a href="contact.html">Contact</a>
-            </div>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Portfolio</div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Menu ▾</a>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="articles.html">Articles</a>
+          <a href="contact.html">Contact</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section class="section">
-        <h2>About Me</h2>
-        <p>Hello! I’m Nicholas, a passionate web developer who loves blending design and functionality. I enjoy building clean, responsive websites and experimenting with modern frameworks.</p>
-        <p>When I’m not coding, I explore UI/UX trends, write about development, and contribute to open-source projects.</p>
-    </section>
+  <section class="section" id="bio">
+    <h2>Biography</h2>
+    <p>Hello! I’m Nicholas, a passionate web developer who enjoys blending design and functionality.
+       I thrive on building clean, responsive websites and experimenting with modern frameworks.</p>
+    <p>My journey started with curiosity about how digital experiences are crafted, and now I focus on
+       creating projects that balance aesthetics with usability.</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Portfolio. All rights reserved.</p>
-    </footer>
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <p>Here are some of the areas I specialize in:</p>
+    <ul>
+      <li>Front-end development with HTML, CSS, and JavaScript</li>
+      <li>Deploying static sites on platforms like Vercel</li>
+      <li>Responsive design and accessibility best practices</li>
+      <li>Cross-cultural communication and bilingual content creation</li>
+    </ul>
+  </section>
+
+  <section class="section" id="hobbies">
+    <h2>Hobbies</h2>
+    <p>Outside of coding, I enjoy exploring UI/UX trends, writing about digital media, and contributing
+       to open-source projects. I also love experimenting with animations and creative layouts.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Portfolio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
