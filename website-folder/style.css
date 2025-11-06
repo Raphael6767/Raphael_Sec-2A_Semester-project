@@ -47,6 +47,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -61,6 +62,54 @@ nav {
 .nav-links a:hover {
     background-color: var(--deep-teal);
     transform: translateY(-2px);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.dropbtn:hover {
+    background-color: var(--deep-teal);
+    transform: translateY(-2px);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-slate);
+    min-width: 180px;
+    box-shadow: var(--soft-shadow);
+    border-radius: 6px;
+    z-index: 200;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-content a {
+    color: var(--cream);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--deep-teal);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Hero Section */
@@ -127,31 +176,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-    background-color: var(--dark-slate);
-    color: var(--cream);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideDown {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
 /* Contact Form */
 .contact-form {
     display: flex;
@@ -182,15 +206,27 @@ footer {
     outline: none;
 }
 
-.contact-form button {
-    background-color: var(--burnt-orange);
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: var(--soft-shadow);
+/* Footer */
+footer {
+    background-color: var(--dark-slate);
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
