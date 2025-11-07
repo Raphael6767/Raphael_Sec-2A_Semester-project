@@ -33,7 +33,7 @@ nav{background:var(--dark-slate);position:sticky;top:0;z-index:1000;box-shadow:v
 
 /* Pages dropdown */
 .pages-dropdown{position:relative}
-.pages-toggle{background:transparent;color:#fff;border:none;padding:8px 12px;border-radius:8px;font-weight:700;cursor:pointer}
+.pages-toggle{background:transparent;color:#fff;border:none;padding:8px 12px;border-radius:8px;font-weight:600;font-family:inherit;cursor:pointer}
 .pages-toggle:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px)}
 .pages-menu{display:none;position:absolute;left:0;top:calc(100% + 8px);min-width:220px;background:var(--dark-slate);border-radius:10px;box-shadow:var(--shadow);overflow:hidden;z-index:600}
 .pages-item{display:block;color:#fff;text-decoration:none;padding:10px 12px;font-weight:600}
